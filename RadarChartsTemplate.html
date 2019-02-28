@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="assets/radar-chart.css" rel="stylesheet">
+    <script src="assets/d3.v3.js">
+    </script>
+    <script src="assets/radar-chart.js">
+    </script>
+</head>
+
+<body>
+    
+    ^^^^^^
+    
+    <script>
+    var chart = RadarChart.chart();
+    var cfg = chart.config(); // retrieve default config
+    var canvas_width = 150; //cfg.w + cfg.w + 50;
+    var data = %%%%%%;
+    // many radars
+    chart.config({
+        w: 130, //cfg.w / 4,
+        h: 130, //cfg.h / 4,
+        factorLegend: 1,
+        axisText: true,
+        circles : false,
+        levels  : 2,
+        maxValue: 100,
+    });
+    cfg = chart.config();
+
+    function render(this_data) {
+        var svg = d3.select('#'+this_data[0]).append('svg').attr('width', canvas_width).attr('height', cfg.h);
+        svg.append('text').text(this_data[1]).attr('class', 'desc').attr('x', 65).attr('y', 145);// Description
+        svg.append('text').text(this_data[2]).attr('class', 'image').attr('x', 60).attr('y', 80); // Image
+        var values = [this_data.slice(3)];
+        var game = svg.selectAll('g.game').data(values);
+        game.enter().append('g').classed('game', 1);
+        game.call(chart);
+    }
+    data.forEach(render);
+    </script>
+    <!--pre>&&&&&&</pre-->
+</body>
+
+</html>
