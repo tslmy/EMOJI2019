@@ -1,4 +1,4 @@
-# EMOJI2019
+# Exploring (Dis-)Similarities in Emoji-Emotion Association on Twitter and Weibo
 
 ![teaser](https://ws1.sinaimg.cn/large/006tKfTcly1g0nzavbl6dj30xi08hdjp.jpg)
 
