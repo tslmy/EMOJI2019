@@ -10,4 +10,8 @@ Main code file is the Notebook `EMOJI2019 - After Models Are Trained.ipynb`.
 
 The Notebook contains visualization code which makes use of `RadarChartsTemplate.html`. The HTML file in turn requires files in `assets/` to render the radar charts properly.
 
-Citation information to follow.
+# Citation
+
+Kindly cite our paper:
+
+> Li, M., Guntuku, S. C., Jakhetiya, V. & Ungar, L. H. Exploring (Dis-)Similarities in Emoji-Emotion Association on Twitter and Weibo, Proceedings of the second International Workshop on Emoji Understanding and Applications in Social Media , EMOJI2019 (colocated with The WebConf), 2019
